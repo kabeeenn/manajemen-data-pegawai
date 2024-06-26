@@ -16,7 +16,7 @@
                         <li class="list-group-item">{{ __('Unit') }}: {{ $pegawai->unit->nama }}</li>
                     </ul>
                     <div class="text-center mt-3">
-                        <a href="{{ route('pegawais.index') }}" class="button-1 w-100">{{ __('Kembali') }}</a>
+                        <a href="{{ route('pegawais.index') }}" class="button-1 w-100 bg-yellow-100">{{ __('Kembali') }}</a>
                     </div>
                 </div>
             </div>

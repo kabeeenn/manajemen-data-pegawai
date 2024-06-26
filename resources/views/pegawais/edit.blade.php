@@ -57,7 +57,7 @@
                             </li>
                         </ul>
                         <div class="text-center mt-3">
-                            <button type="submit" class="button-1 mt-2 w-100">{{ __('Update') }}</button>
+                            <button type="submit" class="button-1 mt-2 w-100 bg-teal-100">{{ __('Update') }}</button>
                         </div>
                     </form>
                 </div>
