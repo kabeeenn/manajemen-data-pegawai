@@ -1,3 +1,5 @@
+<!-- database\factories\PegawaiFactory.php -->
+
 <?php
 
 namespace Database\Factories;

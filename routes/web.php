@@ -1,3 +1,5 @@
+<!-- routes\web.php -->
+
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -9,5 +11,3 @@ Route::get('/', [PegawaiController::class, 'index']);
 Route::resource('pegawais', PegawaiController::class);
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

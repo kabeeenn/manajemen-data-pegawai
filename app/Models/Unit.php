@@ -1,3 +1,5 @@
+<!-- /Unit.php/ -->
+
 <?php
 
 namespace App\Models;
@@ -12,10 +14,4 @@ class Unit extends Model
     protected $fillable = [
         'nama',
     ];
-
-    // Relasi dengan model Pegawai
-    // public function pegawais()
-    // {
-    //     return $this->hasMany(Pegawai::class);
-    // }
 }

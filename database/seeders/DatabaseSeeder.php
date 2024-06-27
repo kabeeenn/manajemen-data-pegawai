@@ -1,3 +1,5 @@
+<!-- database\seeders\DatabaseSeeder.php -->
+
 <?php
 
 namespace Database\Seeders;
@@ -21,14 +23,6 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-
-        Pegawai::factory()->create([
-            'nama' => 'Kabin',
-            'alamat' => 'Gang Mega 3 No. 3',
-            'email' => 'kabin@gmail.com',
-            'tanggal_lahir' => '1998-08-08',
-            'unit_id' => Unit::factory()
-        ]);
 
         Unit::factory(4)->create()->each(function ($unit) {
             Pegawai::factory(3)->create(['unit_id' => $unit->id]);

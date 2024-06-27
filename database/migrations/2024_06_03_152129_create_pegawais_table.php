@@ -1,3 +1,5 @@
+<!-- database\migrations\2024_06_03_152129_create_pegawais_table.php -->
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;

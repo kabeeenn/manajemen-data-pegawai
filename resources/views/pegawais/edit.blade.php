@@ -1,3 +1,5 @@
+{{-- resources\views\pegawais\edit.blade.php --}}
+
 @extends('layouts.app')
 
 @section('content')

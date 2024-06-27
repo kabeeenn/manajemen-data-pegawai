@@ -1,3 +1,5 @@
+<!-- app\Http\Controllers\PegawaiController.php -->
+
 <?php
 
 namespace App\Http\Controllers;
@@ -50,7 +52,7 @@ class PegawaiController extends Controller
             Pegawai::create($validatedData);
             return redirect()->route('pegawais.index')->with('success', 'Pegawai created successfully.');
         } catch (\Illuminate\Database\QueryException $e) {
-            if ($e->errorInfo[1] == 1062) { // Duplicate entry error code
+            if ($e->errorInfo[1] == 1062) {
                 return redirect()->back()->withInput()->withErrors(['email' => 'Email already exists.']);
             }
             return redirect()->back()->withInput()->withErrors(['error' => 'An error occurred while creating the Pegawai.']);
@@ -95,7 +97,7 @@ class PegawaiController extends Controller
             $pegawai->update($validatedData);
             return redirect()->route('pegawais.index')->with('success', 'Pegawai updated successfully.');
         } catch (\Illuminate\Database\QueryException $e) {
-            if ($e->errorInfo[1] == 1062) { // Duplicate entry error code
+            if ($e->errorInfo[1] == 1062) {
                 return redirect()->back()->withInput()->withErrors(['email' => 'Email already exists.']);
             }
             return redirect()->back()->withInput()->withErrors(['error' => 'An error occurred while updating the Pegawai.']);
